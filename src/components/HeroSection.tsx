@@ -1,9 +1,7 @@
 // You'll need to use the Image component for optimized image loading
 import Image from "next/image";
-
-// Placeholder for your band's hero image (replace with your file path!)
 import HeroImage from '@/assets/images/hero-bg.jpg';
-import BandName from '@/assets/images/name.png'; // <--- NEW IMPORT for your logo
+import BandName from '@/assets/images/name.png';
 
 // NOTE: Create a public/images directory and add your hero-bg.jpg there.
 
