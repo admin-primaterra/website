@@ -1,6 +1,9 @@
 // You'll need to use the Image component for optimized image loading
 import Image from "next/image";
 import ArtCover from '@/assets/images/art-cover.jpg';
+import Spotify from '@/assets/images/icon-spotify.png';
+import AppleMusic from '@/assets/images/icon-apple-music.png';
+import YoutubeMusic from '@/assets/images/icon-youtube-music.png';
 
 export default function PromoSection() {
   return (
@@ -29,14 +32,35 @@ export default function PromoSection() {
             </p>
             {/* <p className="text-lg font-medium">Out October 27, 2025</p> */}
             
-            <div className="flex flex-wrap justify-center md:justify-start gap-4 pt-6 text-center md:text-left">
-              <a href="https://open.spotify.com/intl-de/album/09byjD7pbEm85ysXGmJlYF?si=LWjTCExgQH6HNP8_vqpa_w" className="px-5 py-2 text-white hover:bg-gray-800 text-sm font-semibold transition">
+            <div className="flex flex-wrap justify-center md:justify-start gap-4 pt-16 text-center md:text-left">
+              <a href="https://open.spotify.com/intl-de/album/09byjD7pbEm85ysXGmJlYF?si=LWjTCExgQH6HNP8_vqpa_w" className="flex flex-wrap px-5 py-2 border border-white text-white hover:bg-gray-800 text-sm font-semibold transition">
+                <Image
+                  src={Spotify}
+                  alt="Spotify"
+                  width={20}
+                  height={20}
+                  className="object-contain mr-2"
+                />
                 Spotify
               </a>
-              <a href="https://music.youtube.com/watch?v=1J--Q3pieb0&si=MZJVd-9rRTfPeZ0r" className="px-5 py-2 text-white hover:bg-gray-800 text-sm font-semibold transition">
+              <a href="https://music.youtube.com/watch?v=1J--Q3pieb0&si=MZJVd-9rRTfPeZ0r" className="flex flex-wrap px-5 py-2 border border-white text-white hover:bg-gray-800 text-sm font-semibold transition">
+                <Image
+                  src={YoutubeMusic}
+                  alt="Spotify"
+                  width={20}
+                  height={20}
+                  className="object-contain mr-2"
+                />
                 Youtube Music
               </a>
-              <a href="https://music.apple.com/us/song/collateral-damage/1706471121" className="px-5 py-2 text-white hover:bg-gray-800 text-sm font-semibold transition">
+              <a href="https://music.apple.com/us/song/collateral-damage/1706471121" className="flex flex-wrap px-5 py-2 border border-white text-white hover:bg-gray-800 text-sm font-semibold transition">
+                <Image
+                  src={AppleMusic}
+                  alt="Spotify"
+                  width={20}
+                  height={20}
+                  className="object-contain mr-2"
+                />
                 Apple Music
               </a>
             </div>
