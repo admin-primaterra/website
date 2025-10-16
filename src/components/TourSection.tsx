@@ -1,9 +1,8 @@
 // Using a simple array of objects for the tour data
 const tourDates = [
-  { date: 'NOV 12', city: 'London, UK', venue: 'The Forum', link: '#' },
-  { date: 'NOV 15', city: 'Paris, FR', venue: 'Le Bataclan', link: '#' },
-  { date: 'NOV 18', city: 'Berlin, DE', venue: 'Huxleys Neue Welt', link: '#' },
-  { date: 'DEC 01', city: 'New York, USA', venue: 'Bowery Ballroom', link: '#' },
+  { date: 'AUG 31', city: 'Berlin, DE', venue: 'Spirale', link: '#' },
+  { date: 'SEP 14', city: 'Berlin, DE', venue: 'Spirale', link: '#' },
+  { date: 'OCT 11', city: 'Berlin, DE', venue: 'Private Show', link: '#' },
 ];
 
 export default function TourSection() {
@@ -29,7 +28,7 @@ export default function TourSection() {
                 href={gig.link} 
                 className="ml-4 px-4 py-2 bg-black text-white hover:bg-gray-700 transition font-medium text-sm whitespace-nowrap"
               >
-                Tickets
+                Event
               </a>
             </li>
           ))}
