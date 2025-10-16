@@ -7,9 +7,32 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Primaterra | Official Website",
-  description: "Official website for the band Primaterra. Music, videos, tour dates, and more.",
-    icons: {
-    icon: '/icon.png',
+  description:
+    "Official website for the band Primaterra. Music, videos, tour dates, and more.",
+  icons: {
+    icon: "/icon.png",
+  },
+  openGraph: {
+    title: "Primaterra | Official Website",
+    description: "Listen to our latest release ‘Collateral Damage’ — available everywhere now.",
+    url: "https://primaterraband.netlify.app",
+    siteName: "Primaterra",
+    images: [
+      {
+        url: "/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Primaterra - Collateral Damage Album Cover",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Primaterra | Official Website",
+    description: "Listen to our latest release ‘Collateral Damage’ — available everywhere now.",
+    images: ["/og-image.jpg"], // same image works fine
   },
 };
 
