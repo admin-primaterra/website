@@ -1,4 +1,6 @@
 'use client'; // required if using Next.js App Router
+import Image from "next/image";
+import Logo from '@/assets/images/logo.png';
 
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
@@ -29,8 +31,8 @@ export default function Navbar() {
 
           {/* Logo */}
           <Link href="/" className="flex items-center">
-            <img
-              src="/logo.png"
+            <Image
+              src={Logo}
               alt="Band Logo"
               className="h-6 w-auto object-contain"
             />
