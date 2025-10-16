@@ -1,14 +1,34 @@
+'use client'; // required if using Next.js App Router
+
+import { useEffect, useState } from 'react';
 import Link from 'next/link';
 
-// Define the Navbar component
 export default function Navbar() {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      // When user scrolls more than 50px down, set navbar as "scrolled"
+      setScrolled(window.scrollY > 50);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
-    <nav className="fixed top-0 left-0 right-0 bg-black bg-opacity-90 backdrop-blur-sm z-10">
+    <nav
+      className={`fixed top-0 left-0 right-0 z-10 transition-colors duration-500 ${
+        scrolled
+          ? 'bg-black/80'
+          : 'bg-transparent'
+      }`}
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          
-          {/* Logo/Brand Name */}
-          <Link href="/" className="text-white text-2xl font-extrabold tracking-wider hover:text-gray-400 transition">
+
+          {/* Logo */}
+          <Link href="/" className="flex items-center">
             <img
               src="/logo.png"
               alt="Band Logo"
@@ -27,7 +47,7 @@ export default function Navbar() {
             <Link href="/about" className="text-white hover:text-red-500 transition duration-150">
               About
             </Link>
-            {/* Add more links here like /tour or /contact */}
+            {/* Add more links here */}
           </div>
         </div>
       </div>
