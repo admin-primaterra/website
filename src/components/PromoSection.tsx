@@ -28,7 +28,7 @@ export default function PromoSection() {
           {/* Description and Links */}
           <div className="w-full md:w-2/3 text-center md:text-left space-y-4">
             <p className="text-gray-400">
-                "Collateral Damage". Available everywhere now.
+                &quot;Collateral Damage&quot;. Available everywhere now.
             </p>
             {/* <p className="text-lg font-medium">Out October 27, 2025</p> */}
             
