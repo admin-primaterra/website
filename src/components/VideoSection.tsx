@@ -10,7 +10,6 @@ export default function VideoSection() {
         <div className="relative w-full" style={{ paddingTop: '56.25%' /* 16:9 aspect ratio */ }}>
           <iframe
             className="absolute top-0 left-0 w-full h-full border-none"
-            // Replace the 'src' with your actual YouTube or Vimeo embed URL
             src="https://www.youtube.com/embed/ePjFCaPMpo4?si=H6-XK5RHWPno9zMn" 
             title="Hate Machine Music Video"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

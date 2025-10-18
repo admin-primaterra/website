@@ -6,6 +6,7 @@ import Navbar from "@/components/Navbar";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://primaterraband.netlify.app"),
   title: "Primaterra | Official Website",
   description:
     "Official website for the band Primaterra. Music, videos, tour dates, and more.",
@@ -32,13 +33,12 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Primaterra | Official Website",
     description: "Listen to our latest release ‘Collateral Damage’ — available everywhere now.",
-    images: ["/og-image.jpg"], // same image works fine
+    images: ["/og-image.jpg"],
   },
 };
 
-// Define the RootLayout component with TypeScript types
 export default function RootLayout({
-  children, // 'children' will be the content of page.tsx, gallery/page.tsx, etc.
+  children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {

@@ -1,4 +1,4 @@
-'use client'; // required if using Next.js App Router
+'use client';
 import Image from "next/image";
 import Logo from '@/assets/images/logo.png';
 
@@ -30,7 +30,7 @@ export default function Navbar() {
         <div className="flex justify-between items-center h-16">
 
           {/* Logo */}
-          <Link href="/" className="flex items-center">
+          <Link href="/" className="flex items-center hover:opacity-50 transition duration-150">
             <Image
               src={Logo}
               alt="Band Logo"
@@ -40,13 +40,13 @@ export default function Navbar() {
           
           {/* Navigation Links */}
           <div className="flex space-x-6">
-            <Link href="/" className="text-white hover:text-red-500 transition duration-150">
+            <Link href="/" className="text-white hover:text-gray-500 transition duration-150">
               Home
             </Link>
-            <Link href="/gallery" className="text-white hover:text-red-500 transition duration-150">
+            <Link href="/gallery" className="text-white hover:text-gray-500 transition duration-150">
               Gallery
             </Link>
-            <Link href="/about" className="text-white hover:text-red-500 transition duration-150">
+            <Link href="/about" className="text-white hover:text-gray-500 transition duration-150">
               About
             </Link>
             {/* Add more links here */}
