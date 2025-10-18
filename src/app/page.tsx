@@ -2,6 +2,7 @@ import HeroSection from '@/components/HeroSection';
 import PromoSection from '@/components/PromoSection';
 import VideoSection from '@/components/VideoSection';
 import TourSection from '@/components/TourSection';
+import Footer from '@/components/Footer';
 
 export default function Home() {
   return (
@@ -17,6 +18,9 @@ export default function Home() {
 
       {/* 4. Tour Dates List Section */}
       <TourSection />
+
+      {/* 5. Footer Section With Social Media Links*/}
+      <Footer />
 
       {/* Note: The global Navbar from layout.tsx will sit above all of this content. */}
     </div>
