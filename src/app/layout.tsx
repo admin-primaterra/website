@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Primaterra | Official Website",
-    description: "Listen to our latest release ‘Collateral Damage’ — available everywhere now.",
+    description: "Listen to our latest release ‘Deconstruct’ — available everywhere now.",
     url: "https://primaterraband.netlify.app",
     siteName: "Primaterra",
     images: [
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Primaterra - Collateral Damage Album Cover",
+        alt: "Primaterra - Deconstruct Album Cover",
       },
     ],
     locale: "en_US",
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Primaterra | Official Website",
-    description: "Listen to our latest release ‘Collateral Damage’ — available everywhere now.",
+    description: "Listen to our latest release ‘Deconstruct’ — available everywhere now.",
     images: ["/og-image.jpg"], // same image works fine
   },
 };
