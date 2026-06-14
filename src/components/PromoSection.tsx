@@ -84,7 +84,7 @@ export default function PromoSection() {
             </p>
 
             <div className="flex flex-col gap-3 w-full">
-              <a href="https://open.spotify.com/intl-de/album/09byjD7pbEm85ysXGmJlYF?si=LWjTCExgQH6HNP8_vqpa_w" className="flex items-center justify-center gap-2 px-5 py-3 border border-white text-white hover:bg-gray-800 text-sm font-semibold transition rounded">
+              <a href="https://open.spotify.com/artist/64mzspTS7HNmFtd56t4NVk" className="flex items-center justify-center gap-2 px-5 py-3 border border-white text-white hover:bg-gray-800 text-sm font-semibold transition rounded">
                 <Image src={Spotify} alt="Spotify" width={20} height={20} className="object-contain" />
                 Spotify
               </a>
@@ -92,7 +92,7 @@ export default function PromoSection() {
                 <Image src={YoutubeMusic} alt="YouTube Music" width={20} height={20} className="object-contain" />
                 YouTube Music
               </a>
-              <a href="https://music.apple.com/us/song/collateral-damage/1706471121" className="flex items-center justify-center gap-2 px-5 py-3 border border-white text-white hover:bg-gray-800 text-sm font-semibold transition rounded">
+              <a href="https://music.apple.com/us/artist/primaterra/1642875009" className="flex items-center justify-center gap-2 px-5 py-3 border border-white text-white hover:bg-gray-800 text-sm font-semibold transition rounded">
                 <Image src={AppleMusic} alt="Apple Music" width={20} height={20} className="object-contain" />
                 Apple Music
               </a>
