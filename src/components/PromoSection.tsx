@@ -11,7 +11,7 @@ declare global {
   }
 }
 
-const SPOTIFY_BASE = "https://open.spotify.com/embed/track/2VOTjoPEOJvyoZjGuShoj7?utm_source=generator&si=6790a4f48eaa4ce1";
+const SPOTIFY_BASE = "https://open.spotify.com/embed/album/1dbSL5iutXRmK1cSi1Wmpo?utm_source=generator&si=2e0b2f08aed24110";
 
 export default function PromoSection() {
   const playerRef = useRef<HTMLDivElement>(null);
